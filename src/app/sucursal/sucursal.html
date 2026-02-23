@@ -1,0 +1,31 @@
+<!-- Se presenta para todas las sucursales -->
+<ul class="nav bg-success px-3">
+    <li class="nav-item" *ngIf="id === '1'">
+        <a class="nav-link text-white active" style="cursor: pointer;" [class.active]="vistaActiva === 'dashboard'"
+            (click)="vistaActiva = 'dashboard'" aria-current="page">Dashboard</a>
+    </li>
+    <li class="nav-item" *ngIf="id === '1'">
+        <a class="nav-link text-white" style="cursor: pointer;" [class.active]="vistaActiva === 'menu'"
+            (click)="vistaActiva = 'menu'">Menú</a>
+    </li>
+    <li class="nav-item ms-auto">
+        <a class="nav-link text-white" href="#">Ayuda</a>
+    </li>
+</ul>
+
+<!-- Se implementa únicamente para sucursal 1 según lo indicado en el requerimiento -->
+<div *ngIf="id === '1'">
+    <div *ngIf="vistaActiva === 'dashboard'">
+        <app-dashboard></app-dashboard>
+    </div>
+
+    <div *ngIf="vistaActiva === 'menu'">
+        <app-menu></app-menu>
+    </div>
+</div>
+
+<!--Sucursales mayor a 1-->
+<div *ngIf="id !== '1'" class="min-vh-100 d-flex flex-column align-items-center justify-content-center bg-light">
+    <i class="bi bi-journal-check fs-1"></i>
+    <h5 class="fw-bold mb-5">Sucursal {{id}}</h5>
+</div>

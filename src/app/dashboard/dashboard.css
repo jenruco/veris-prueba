@@ -1,0 +1,30 @@
+.card-box {
+    color: white;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 110px;
+  }
+  
+  .bg-primary-custom {
+    background-color: #4e73df;
+  }
+  
+  .bg-success-custom {
+    background-color: #2ecc71;
+  }
+  
+  .bg-danger-custom {
+    background-color: #ff6b6b;
+  }
+  
+  .bg-warning-custom {
+    background-color: #f4b400;
+  }
+  
+
+#tablaMensajes th {
+    min-width: 300px;
+}

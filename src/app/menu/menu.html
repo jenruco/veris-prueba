@@ -1,0 +1,84 @@
+<nav class="nav nav-pills nav-justified">
+    <a class="nav-link active" style="cursor: pointer;" [class.active]="vistaActiva === 'cruce'"
+        (click)="vistaActiva = 'cruce'" aria-current="page">Cruce depósitos</a>
+    <a class="nav-link" style="cursor: pointer;" [class.active]="vistaActiva === 'registro'"
+        (click)="vistaActiva = 'registro'">Registros</a>
+</nav>
+
+<div *ngIf="vistaActiva === 'cruce'">
+    <div class="card mx-auto" style="width: 70%; margin-top: 40px;">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item" style="text-align: center; color: blue;">Cruce de Depósitos</li>
+            <li class="list-group-item">
+
+                <div class="border border-dashed rounded p-5 text-center mb-4"
+                    style="border-style: dashed !important; cursor: pointer;">
+                    <i class="bi bi-upload fs-1 d-block mb-2"></i>
+                    <span class="text-muted">Arrastra y Suelta el Archivo aqui</span>
+                </div>
+
+                <label class="form-label">Carga de Archivo <span class="text-danger">*</span></label>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Archivo .xlsx" readonly>
+                    <button class="btn btn-primary rounded-circle ms-2" type="button" style="width:42px; height:42px;">
+                        <i class="bi bi-paperclip"></i>
+                    </button>
+                </div>
+
+                <div class="d-flex justify-content-center gap-3 mt-3">
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-outline-primary">
+                            <i class="bi bi-eraser"></i>
+                        </button>
+                    </div>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-primary">Buscar</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div *ngIf="vistaActiva === 'registro'">
+    <div class="d-flex gap-3 mx-auto mt-4" style="width: 70%;">
+        <div class="card flex-fill">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item text-center" style="color: blue;">Registro de Facturas Manuales</li>
+                <li class="list-group-item">
+                    <label class="form-label">
+                        Último N° Factura Manual del Block
+                        <small><i>(Sgt. Fact. Disponible)</i></small>
+                        <span class="text-danger"> *</span>
+                    </label>
+
+                    <div class="d-flex gap-2">
+                        <input type="text" class="form-control" style="width: 70px;">
+                        <input type="text" class="form-control" style="width: 70px;">
+                        <input type="text" class="form-control" style="width: 70px;">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card flex-fill">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item text-center" style="color: blue;">Registro de Notas de Crédito Manuales</li>
+                <li class="list-group-item">
+
+                    <label class="form-label">
+                        Último N° Nota Crédito Manual del Block
+                        <small><i>(Sgt. N/C Disponible)</i></small>
+                        <span class="text-danger"> *</span>
+                    </label>
+
+                    <div class="d-flex gap-2">
+                        <input type="text" class="form-control" style="width: 70px;">
+                        <input type="text" class="form-control" style="width: 70px;">
+                        <input type="text" class="form-control" style="width: 70px;">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
