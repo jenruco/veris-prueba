@@ -1,5 +1,7 @@
-<!--<app-login></app-login>-->
-<app-navbar></app-navbar>
+@if (enSesion) {
+  <app-navbar></app-navbar>  
+  <router-outlet />
+} @else {
+  <app-login></app-login>
+}
 
-
-<router-outlet />

@@ -3,10 +3,13 @@
     <h5 class="fw-bold mb-5">Selecciona Sucursal</h5>
   
     <div class="d-flex gap-3">
-      <button class="btn btn-outline-secondary bg-white px-4 py-2 rounded-3 shadow-sm" routerLink="/sucursal/1">Sucursal 1</button>
-      <button class="btn btn-outline-secondary bg-white px-4 py-2 rounded-3 shadow-sm" routerLink="/sucursal/2">Sucursal 2</button>
-      <button class="btn btn-outline-secondary bg-white px-4 py-2 rounded-3 shadow-sm" routerLink="/sucursal/3">Sucursal 3</button>
-      <button class="btn btn-outline-secondary bg-white px-4 py-2 rounded-3 shadow-sm" routerLink="/sucursal/4">Sucursal 4</button>
+      
+      <button 
+        *ngFor="let sucursal of listaSucursales" 
+        class="btn btn-outline-secondary bg-white px-4 py-2 rounded-3 shadow-sm" 
+        [routerLink]="['/sucursal', sucursal.id]">
+        {{sucursal.nombre}}
+      </button>
     </div>
   
   </div>

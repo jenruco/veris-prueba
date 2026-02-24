@@ -1,5 +1,5 @@
 [{
-    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio",
+    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio1",
     "fechaIngreso": "31/12/2099 23:59:59",
     "idEmpresaHomologacion": "empresa-prueba-1234-5678",
     "asunto": "Confirmación de pago PRUEBA @nombreEmpresaTest@",
@@ -47,8 +47,8 @@
     "cantIntentosStatusMail": 0
   },
   {
-    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio",
-    "fechaIngreso": "31/12/2099 23:59:59",
+    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio2",
+    "fechaIngreso": "31/12/2098 23:59:59",
     "idEmpresaHomologacion": "empresa-prueba-1234-5678",
     "asunto": "Confirmación de pago PRUEBA @nombreEmpresaTest@",
     "codigoPlantilla": "plantilla-fake-9999",
@@ -95,8 +95,8 @@
     "cantIntentosStatusMail": 0
   },
   {
-    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio",
-    "fechaIngreso": "31/12/2099 23:59:59",
+    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio3",
+    "fechaIngreso": "31/12/2097 23:59:59",
     "idEmpresaHomologacion": "empresa-prueba-1234-5678",
     "asunto": "Confirmación de pago PRUEBA @nombreEmpresaTest@",
     "codigoPlantilla": "plantilla-fake-9999",
@@ -143,8 +143,8 @@
     "cantIntentosStatusMail": 0
   },
   {
-    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio",
-    "fechaIngreso": "31/12/2099 23:59:59",
+    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio4",
+    "fechaIngreso": "31/12/2096 23:59:59",
     "idEmpresaHomologacion": "empresa-prueba-1234-5678",
     "asunto": "Confirmación de pago PRUEBA @nombreEmpresaTest@",
     "codigoPlantilla": "plantilla-fake-9999",
@@ -191,8 +191,8 @@
     "cantIntentosStatusMail": 0
   },
   {
-    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio",
-    "fechaIngreso": "31/12/2099 23:59:59",
+    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio5",
+    "fechaIngreso": "31/12/2095 23:59:59",
     "idEmpresaHomologacion": "empresa-prueba-1234-5678",
     "asunto": "Confirmación de pago PRUEBA @nombreEmpresaTest@",
     "codigoPlantilla": "plantilla-fake-9999",
@@ -239,8 +239,8 @@
     "cantIntentosStatusMail": 0
   },
   {
-    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio",
-    "fechaIngreso": "31/12/2099 23:59:59",
+    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio6",
+    "fechaIngreso": "31/12/2094 23:59:59",
     "idEmpresaHomologacion": "empresa-prueba-1234-5678",
     "asunto": "Confirmación de pago PRUEBA @nombreEmpresaTest@",
     "codigoPlantilla": "plantilla-fake-9999",
@@ -287,8 +287,8 @@
     "cantIntentosStatusMail": 0
   },
   {
-    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio",
-    "fechaIngreso": "31/12/2099 23:59:59",
+    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio7",
+    "fechaIngreso": "31/12/2093 23:59:59",
     "idEmpresaHomologacion": "empresa-prueba-1234-5678",
     "asunto": "Confirmación de pago PRUEBA @nombreEmpresaTest@",
     "codigoPlantilla": "plantilla-fake-9999",
@@ -335,8 +335,8 @@
     "cantIntentosStatusMail": 0
   },
   {
-    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio",
-    "fechaIngreso": "31/12/2099 23:59:59",
+    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio8",
+    "fechaIngreso": "31/12/2092 23:59:59",
     "idEmpresaHomologacion": "empresa-prueba-1234-5678",
     "asunto": "Confirmación de pago PRUEBA @nombreEmpresaTest@",
     "codigoPlantilla": "plantilla-fake-9999",
@@ -383,8 +383,8 @@
     "cantIntentosStatusMail": 0
   },
   {
-    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio",
-    "fechaIngreso": "31/12/2099 23:59:59",
+    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio9",
+    "fechaIngreso": "31/12/2091 23:59:59",
     "idEmpresaHomologacion": "empresa-prueba-1234-5678",
     "asunto": "Confirmación de pago PRUEBA @nombreEmpresaTest@",
     "codigoPlantilla": "plantilla-fake-9999",
@@ -431,8 +431,8 @@
     "cantIntentosStatusMail": 0
   },
   {
-    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio",
-    "fechaIngreso": "31/12/2099 23:59:59",
+    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio10",
+    "fechaIngreso": "31/12/2090 23:59:59",
     "idEmpresaHomologacion": "empresa-prueba-1234-5678",
     "asunto": "Confirmación de pago PRUEBA @nombreEmpresaTest@",
     "codigoPlantilla": "plantilla-fake-9999",
@@ -479,8 +479,8 @@
     "cantIntentosStatusMail": 0
   },
   {
-    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio",
-    "fechaIngreso": "31/12/2099 23:59:59",
+    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio11",
+    "fechaIngreso": "20/12/2025 23:59:59",
     "idEmpresaHomologacion": "empresa-prueba-1234-5678",
     "asunto": "Confirmación de pago PRUEBA @nombreEmpresaTest@",
     "codigoPlantilla": "plantilla-fake-9999",
@@ -527,8 +527,8 @@
     "cantIntentosStatusMail": 0
   },
   {
-    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio",
-    "fechaIngreso": "31/12/2099 23:59:59",
+    "codigoMensaje": "test-0000-1111-2222-objeto-ficticio12",
+    "fechaIngreso": "10/02/2026 23:59:59",
     "idEmpresaHomologacion": "empresa-prueba-1234-5678",
     "asunto": "Confirmación de pago PRUEBA @nombreEmpresaTest@",
     "codigoPlantilla": "plantilla-fake-9999",

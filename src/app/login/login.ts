@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../services/login-service';
 import { LoginReqDto } from './dto/login-req-dto';
 import { FormsModule } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -24,7 +25,12 @@ export class Login implements OnInit {
   iniciarSesion() {
     this._loginService.login(this.loginReq).subscribe({
       next: (response: boolean) => {
-        console.log(response)
+        if(!response) {
+          Swal.fire('Error', '¡Usuario o contraseña incorrectos!', 'error');
+        } else {
+          localStorage.setItem('usuario', this.loginReq.usuario);
+          window.location.reload();
+        }
       },
       error: (error) => {
         console.error('Error al iniciar sesión: ' + error)

@@ -11,4 +11,12 @@ import { Navbar } from './navbar/navbar';
 })
 export class App {
   protected readonly title = signal('app-veris');
+
+  get enSesion(): boolean {
+    const usuario = localStorage.getItem('usuario');
+    if(usuario && usuario !== '') {
+      return true;
+    }
+    return false;
+  }
 }

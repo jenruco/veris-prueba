@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -6,6 +7,21 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
-export class Navbar {
+export class Navbar implements OnInit {
+
+  constructor(
+    private router: Router
+  ) {}
+
+  usuario: string = '';
+
+  ngOnInit() {
+    this.usuario = localStorage.getItem('usuario') || 'NA';
+  }
+
+  cerrarSesion() {
+    localStorage.removeItem('usuario');
+    this.router.navigateByUrl('/', { replaceUrl: true });
+  }
 
 }
