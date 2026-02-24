@@ -1,12 +1,6 @@
-# PhantomX - Veris App
+# Veris App - Prueba Técnica
 
-Aplicación web desarrollada en Angular para la gestión y monitoreo de mensajes de correo electrónico por sucursal.
-
-## Tecnologías
-
-- **Angular CLI:** 21.1.4
-- **Node.js:** 22.14.0
-- **Package Manager:** npm 10.9.2
+Aplicación web desarrollada en Angular para la gestión y monitoreo de mensajes de correo electrónico por sucursal como prueba técnica manejando datos estáticos únicamente a nivel de front.
 
 ## Requisitos previos
 
@@ -29,6 +23,8 @@ La aplicación estará disponible en `http://localhost:4200`
 
 ## Docker
 
+En caso de que se desee levantar en Docker
+
 ```bash
 # Construir imagen
 docker build -t app-veris .
@@ -43,14 +39,14 @@ La aplicación estará disponible en `http://localhost:4200`
 
 ```
 src/app/
-├── dashboard/        # Dashboard con estadísticas y tabla de mensajes
-├── login/            # Autenticación de usuario
-├── menu/             # Cruce de depósitos y registros
-├── modal-mail/       # Modal informativo de emails
-├── navbar/           # Barra de navegación
-├── seleccion-sucursal/ # Selección de sucursal
-├── sucursal/         # Vista principal por sucursal
-└── services/         # Servicios HTTP
+├── dashboard/        
+├── login/            
+├── menu/             
+├── modal-mail/       
+├── navbar/           
+├── seleccion-sucursal/ 
+├── sucursal/         
+└── services/         
 ```
 
 ## Credenciales de prueba
@@ -58,3 +54,11 @@ src/app/
 | Usuario | Contraseña |
 |---------|------------|
 | hperez  | 123456     |
+
+## Url de video presentación App
+
+https://mega.nz/file/HZ8CzLSL#_XiuQAPhFjnFqh9mhBeqUh-Sg1-dfGKXCDENyz7kay4
+
+## Url de video presentación Código
+
+https://mega.nz/file/TQVywRpb#PpKdVRpvxqyG9CkrVL4J_gQzKc1QcjJ84nzLp2bE7u0
