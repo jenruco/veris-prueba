@@ -59,7 +59,6 @@ export class Dashboard implements OnInit {
   fechaDesde: Date = new Date();
   fechaHasta: Date = new Date();
 
-
   listaMensajes: MensajesDto[] = [];
   listaMensajesPaginado: MensajesDto[] = [];
   paginaActual: number = 1;
@@ -76,11 +75,27 @@ export class Dashboard implements OnInit {
     "totalMailErrorDesconocido": {total: 61, label: 'Error Desconocido'}
   }
 
+  /**
+   * Metodo que se ejecuta al cargar el componente
+   * 
+   * @author Henry Pérez
+   * @version 1.0
+   * @since 23/02/2026
+   * 
+   */
   ngOnInit() {
     const fechaActual = moment().format('YYYY-MM-DD');
     this.getMensajes();    
   }
 
+  /**
+   * Metodo que consulta los mensajes
+   * 
+   * @author Henry Pérez
+   * @version 1.0
+   * @since 23/02/2026
+   * 
+   */
   getMensajes() {
     this._dashboardService.getMensajes().subscribe({
       next: (listaMensajes: MensajesDto[]) => {
@@ -95,6 +110,14 @@ export class Dashboard implements OnInit {
     })
   }
 
+  /**
+   * Metodo que actualiza la lista de mensajes paginados
+   * 
+   * @author Henry Pérez
+   * @version 1.0
+   * @since 23/02/2026
+   * 
+   */
   actualizaPagina() {
     const inicio = (this.paginaActual - 1) * this.itemsPorPagina;
     const fin = inicio + this.itemsPorPagina;
@@ -102,6 +125,16 @@ export class Dashboard implements OnInit {
     _.orderBy(this.listaMensajesPaginado, ['fechaIngreso'], ['desc']);
   }
 
+  /**
+   * Metodo que se ejecuta al cambiar de pagina - paginación
+   * 
+   * @param {@link number} pagina - número de página
+   * 
+   * @author Henry Pérez
+   * @version 1.0
+   * @since 23/02/2026
+   * 
+   */
   cambiarPagina(pagina: number) {
     if(pagina < 1 || pagina > this.totalPaginas) return;
     this.paginaActual = pagina;
@@ -112,6 +145,14 @@ export class Dashboard implements OnInit {
     return Array.from({length: this.totalPaginas}, (_, i) => i + 1);
   }
 
+  /**
+   * Metodo que presenta la modal
+   * 
+   * @author Henry Pérez
+   * @version 1.0
+   * @since 23/02/2026
+   * 
+   */
   verEmailInfo() {    
     this._dialog.open(ModalMail, {
       width: '800px',
@@ -119,10 +160,28 @@ export class Dashboard implements OnInit {
     });
   }
 
+  /**
+   * Metodo que se ejecuta al seleccionar un rango de días
+   * 
+   * @param {@link any} event - evento de selección
+   * 
+   * @author Henry Pérez
+   * @version 1.0
+   * @since 23/02/2026
+   * 
+   */
   onSelectChange(event: any) {
     this.filtraPorDias(Number(event.value));
   }
 
+  /**
+   * Metodo que limpia filtros 
+   * 
+   * @author Henry Pérez
+   * @version 1.0
+   * @since 23/02/2026
+   * 
+   */
   limpiarFiltros() {
     this.value = 'ninguno';
     this.tipoFiltroSel = 'ninguno';
@@ -131,6 +190,14 @@ export class Dashboard implements OnInit {
     this.getMensajes();
   }
 
+  /**
+   * Metodo que obtiene rango de fechas
+   * 
+   * @author Henry Pérez
+   * @version 1.0
+   * @since 23/02/2026
+   * 
+   */
   filtraPorDias(dias: number) {
     const hoy = moment().endOf('day');
     let fechaInicio;
@@ -169,8 +236,6 @@ export class Dashboard implements OnInit {
         console.error(error);
       }
     })
-
-    
   }
 
 }

@@ -22,6 +22,14 @@ export class Login implements OnInit {
 
   }
 
+   /**
+   * Metodo para el inicio de sesión
+   * 
+   * @author Henry Pérez
+   * @version 1.0
+   * @since 23/02/2026
+   * 
+   */
   iniciarSesion() {
     this._loginService.login(this.loginReq).subscribe({
       next: (response: boolean) => {

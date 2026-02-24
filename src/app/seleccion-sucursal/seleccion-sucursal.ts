@@ -16,6 +16,15 @@ export class SeleccionSucursal implements OnInit {
   constructor() {}
 
   listaSucursales: SucursalDto[] = [];
+
+  /**
+   * Metodo que se ejecuta al cargar el componente
+   * 
+   * @author Henry Pérez
+   * @version 1.0
+   * @since 23/02/2026
+   * 
+   */
   ngOnInit() {
     this.listaSucursales = [
       {

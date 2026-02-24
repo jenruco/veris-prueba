@@ -17,6 +17,14 @@ export class ModalMail implements OnInit {
 
   constructor() {}
 
+  /**
+   * Metodo que se ejecuta al cargar el componente
+   * 
+   * @author Henry Pérez
+   * @version 1.0
+   * @since 23/02/2026
+   * 
+   */
   ngOnInit() {
     this.listaEmails = Object.values(this.data.emailData).map(email => (
       {

@@ -21,6 +21,14 @@ export class Sucursal {
 
   }
 
+  /**
+   * Metodo que se ejecuta al cargar el componente
+   * 
+   * @author Henry Pérez
+   * @version 1.0
+   * @since 23/02/2026
+   * 
+   */
   ngOnInit() {
     this.id = this._route.snapshot.paramMap.get('id') ?? '';
   }

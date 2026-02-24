@@ -15,10 +15,26 @@ export class Navbar implements OnInit {
 
   usuario: string = '';
 
+  /**
+   * Metodo que se ejecuta al cargar el componente
+   * 
+   * @author Henry Pérez
+   * @version 1.0
+   * @since 23/02/2026
+   * 
+   */
   ngOnInit() {
     this.usuario = localStorage.getItem('usuario') || 'NA';
   }
 
+  /**
+   * Metodo para cerrar sesión
+   * 
+   * @author Henry Pérez
+   * @version 1.0
+   * @since 23/02/2026
+   * 
+   */
   cerrarSesion() {
     localStorage.removeItem('usuario');
     this.router.navigateByUrl('/', { replaceUrl: true });
